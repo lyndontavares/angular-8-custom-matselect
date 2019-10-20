@@ -46,7 +46,7 @@ export class CustomSelectComponent implements ControlValueAccessor, OnInit, DoCh
         this.select.value = val;
     }
 
-    @ViewChild('select')
+    @ViewChild('select',{static:false})
     select: MatSelect;
 
     control: FormControl;
