@@ -1,0 +1,8 @@
+<div style="text-align:center">
+  <form class="example-form" [formGroup]="myForm" (submit)="submitForm()">
+    <custom-select placeholder="Favorite Food" [foods]="[null, 'burger', 'spaghetti', 'fries']" 
+      formControlName="favoriteFood" 
+      [errorStateMatcher]="matcher"></custom-select>
+    <button>Submit</button>
+  </form>
+</div>

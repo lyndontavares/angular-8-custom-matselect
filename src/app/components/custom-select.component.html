@@ -1,0 +1,8 @@
+<mat-form-field class="example-full-width">
+    <mat-select [placeholder]="placeholder" #select [formControl]="control">
+        <mat-option *ngFor="let food of foods" [value]="food">
+            {{food}}
+        </mat-option>
+    </mat-select>
+    <mat-error>This is required.</mat-error>
+</mat-form-field>
